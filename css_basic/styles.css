@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+article {flex: 2;
+    overflow-y: auto;
+}
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+html{
+    background:linear-gradient(to bottom,skyblue, rgb(255, 226, 226))
+}
+html{
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+}
+aside{
+    border-style: solid;
+}
+header{
+    border: 2px solid black;
+    border-style:double
+}
+main{
+    border: 1px solid black;   
+     border-style: double;
+}
