@@ -1,0 +1,16 @@
+@keyframes pulsate {
+    100% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(80%);
+    }
+}
+
+.figure {
+    animation-name: pulsate;
+    animation-duration: 3s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+}

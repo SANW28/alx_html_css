@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.header-section{
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.navigation img {
+    width: 200px;
+}
+
+.navigation input {
+    display: none;
+}
+
+.navigation .navigation-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation .navigation-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigation .navigation-links a:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+
+.navigation .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navigation .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+
+.ham {
+    width: 15px !important;
+}
+
+.navigation .mobile-navigation {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navigation .mobile-navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+.home {
+    margin-top: 300px;
+    text-align: center;
+    max-width: 1000px auto;
+}
+
+
+.home h1{
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.home p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.home button {
+    margin-bottom: 15px;
+    box-shadow: 0.1px 0 10px var(--shadow);
+}
+
+blockquote {
+    max-width: 637px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--white);
+    font-size: 16px;
+}
+
+
+@media (max-width: 480px) {
+
+    .navigation .logo {
+        order: 2;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .navigation .navigation-links {
+        display: none;
+    }
+
+    .navigation .hamburger {
+        display: flex;
+        order: 1;
+    }
+
+    .navigation input[type="checkbox"] {
+        display: none;
+    }
+
+    .navigation input[type="checkbox"]:checked ~ .mobile-navigation {
+        display: flex;
+    }
+
+    .navigation input[type="checkbox"]:checked ~ .hamburger div:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 5px);
+    }
+
+    .navigation input[type="checkbox"]:checked ~ .hamburger div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navigation input[type="checkbox"]:checked ~ .hamburger div:nth-child(3) {
+        transform: rotate(-45deg) translate(10px, -5px);
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .home {
+        margin-top: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+.homepage{
+    margin-top: 372px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.homepage p{
+    line-height: 24px;
+}
+
+button{
+    height: 44px;
+    width: 162px;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-weight: bold;
+    color: white;
+    background-color:#FF6565;
+    border: none;
+    padding: 10px 20px;
+}
+
+a:hover,
+a:active {
+    color: #FF6565;
+}
+
+button:hover,
+button:active {
+    opacity: 0.9;
+}
+

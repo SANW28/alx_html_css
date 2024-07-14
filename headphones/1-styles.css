@@ -1,0 +1,70 @@
+
+
+.what-we-do-section{
+    margin: 50px 20px;
+    padding: 50px 0;
+    
+}
+
+.services{
+    text-align: center;
+    line-height: 24px;
+}
+
+.what-we-do{
+    margin: 30px 30px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.media, h3 {
+    margin: 20px;
+    line-height: 30px;
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .services{
+        width: 502px;
+        margin: 0 auto;
+    }
+
+    .what-we-do {
+        flex-direction: row;
+    
+    }   
+}
+
+
+@media (max-width: 480px) {
+
+    .services {
+        width: 325px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .what-we-do {
+        flex-direction: column;
+        display: block;
+        align-items: center ;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1, blockquote {
+        text-align: center;
+    }
+   
+
+    .top, .down {
+        flex-direction: column;
+    }
+}
+
